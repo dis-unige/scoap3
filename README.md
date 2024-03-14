@@ -11,7 +11,8 @@ For the calculation of the revised allocation key, any article published between
 4. An allocation key is calculated by dividing the share of each institution by the total sum of the shares.
 
 ## Data Source
-The publications metadata is imported using the [SCOAP3 repository API](https://github.com/SCOAP3/scoap3-next/wiki/API-documentation): https://repo.scoap3.org/api/records/?q=country:switzerland&year=2022--2023
+The publications metadata is imported using the [SCOAP3 repository API](https://github.com/SCOAP3/scoap3-next/wiki/API-documentation), with the URL: https://repo.scoap3.org/api/records/?q=country:switzerland&year=2022--2023
+
 Then we export the metadata into 3 files on the "source" folder:
 * Publications -> file "publications_2022_2023.tsv" with columns id (publication id), source (publisher), title
 * Authors -> file "auteurs_2022_2023.tsv" with columns id (publication id), full_name, given_names, raw_name, surname, ordre (author position)
