@@ -1,7 +1,6 @@
 # SCOAP3 in Switzerland
 
 * Authors: Pablo Iriarte (pablo.iriarte@unige.ch), Jean-Blaise Claivaz (jean-blaise.claivaz@unige.ch) & Eric Silva Quintana (eric.silvaquintana@unige.ch), UNIGE
-
 * First version: 10.03.2019
 * Last update: 18.03.2024
 * Licence: CC-BY
