@@ -1,5 +1,11 @@
 # SCOAP3 in Switzerland
 
+* Authors: Pablo Iriarte (pablo.iriarte@unige.ch), Jean-Blaise Claivaz (jean-blaise.claivaz@unige.ch) & Eric Silva Quintana (eric.silvaquintana@unige.ch), UNIGE
+
+* First version: 10.03.2019
+* Last update: 18.03.2024
+* Licence: CC-BY
+
 This repo contains the notebook created to determine the cost distribution among the Swiss partners for the [Sponsoring Consortium for Open Access Publishing in Particle Physics (SCOAP3)](https://scoap3.org/) 
 
 ## Methodology
@@ -13,8 +19,7 @@ For the calculation of the revised allocation key, any article published between
 ## Data Source
 The publications metadata is imported using the [SCOAP3 repository API](https://github.com/SCOAP3/scoap3-next/wiki/API-documentation), with the URL: https://repo.scoap3.org/api/records/?q=country:switzerland&year=2022--2023
 
-Then we export the metadata into 3 files on the "source" folder:
-* Publications -> file "publications_2022_2023.tsv" with columns id (publication id), source (publisher), title
-* Authors -> file "auteurs_2022_2023.tsv" with columns id (publication id), full_name, given_names, raw_name, surname, ordre (author position)
-* Affiliations -> file "affiliations_2022_2023.tsv" with columns id (publication id), countryAff, valueAff, ordre (author position)
+Then we export the metadata into 2 files on the "parsed" folder:
+* Publications -> file "scoap3_switzerland_2022_2023_publications.tsv" with columns publication_id, publication_year, publication_created, publication_updated, authors_n, affiliations_n
+* Affiliations -> file "scoap3_switzerland_2022_2023_affiliations.tsv" with columns publication_id, author_id, affiliation_id, ratio, affiliation_country, affiliation_value
 
