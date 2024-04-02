@@ -1,8 +1,8 @@
-# SCOAP3 in Switzerland
+# SCOAP3 country calculation of contributors ratio per institution
 
 * Authors: Pablo Iriarte (pablo.iriarte@unige.ch), Jean-Blaise Claivaz (jean-blaise.claivaz@unige.ch) & Eric Silva Quintana (eric.silvaquintana@unige.ch), UNIGE
 * First version: 10.03.2019
-* Last update: 18.03.2024
+* Last update: 02.04.2024
 * Licence: CC-BY
 
 This repo contains the notebook created to determine the cost distribution among the institutions fora country participating on the [Sponsoring Consortium for Open Access Publishing in Particle Physics (SCOAP3)](https://scoap3.org/) 
