@@ -5,7 +5,7 @@
 * Last update: 02.04.2024
 * Licence: CC-BY
 
-This repo contains the notebook created to determine the cost distribution among the institutions fora country participating on the [Sponsoring Consortium for Open Access Publishing in Particle Physics (SCOAP3)](https://scoap3.org/) 
+This repo contains the notebook created to determine the cost distribution among the institutions for a given country participating on the [Sponsoring Consortium for Open Access Publishing in Particle Physics (SCOAP3)](https://scoap3.org/) 
 
 ## Methodology
 The following method is currently used in Switzerland for the calculation of the revised allocation key: any article published between January 1st, 2022 to December, 31st 2023, deposited into the [SCOAP3 repository](https://repo.scoap3.org/), and with at least one author affiliated with a Swiss institution, is retained. The metadata are gathered through the repository API, and processed according to the following sequence of rules:
