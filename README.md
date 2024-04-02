@@ -19,6 +19,6 @@ The following method is currently used in Switzerland for the calculation of the
 The publications metadata is imported using the [SCOAP3 repository API](https://github.com/SCOAP3/scoap3-next/wiki/API-documentation), with the URL: https://repo.scoap3.org/api/records/?q=country:[country]&year=[year1]--[year2] or https://repo.scoap3.org/api/records/?q=country:((NOT+CERN)+AND+[country])&year=[year1]--[year2]
 
 Then we export the metadata into 2 files on the "parsed" folder:
-* Publications -> file "[country]_[year1]_[year2]_publications.tsv" with columns publication_id, publication_year, publication_created, publication_updated, authors_n, affiliations_n
+* Publications -> file "[country]_[year1]_[year2]_publications.tsv" with columns publication_id, publication_year, publication_doi, authors_nb, affiliations_nb
 * Affiliations -> file "[country]_[year1]_[year2]_affiliations.tsv" with columns publication_id, author_id, affiliation_id, ratio, affiliation_country, affiliation_value
 
