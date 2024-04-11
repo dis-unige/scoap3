@@ -1,4 +1,4 @@
-# SCOAP3 Calculating the level of contribution per country institution
+# SCOAP3 Calculating the level of contribution for the institutions of a given country
 
 * Authors: Pablo Iriarte (pablo.iriarte@unige.ch), Jean-Blaise Claivaz (jean-blaise.claivaz@unige.ch) & Eric Silva Quintana (eric.silvaquintana@unige.ch), University of Geneva Library
 * First version: 10.03.2019
