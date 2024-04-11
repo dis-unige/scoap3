@@ -15,8 +15,18 @@ The metadata are gathered through the repository API, and processed according to
 3. The shares of each Swiss institution are summed up for all the articles.
 4. An allocation key (percent) is calculated by dividing the share of each institution by the total sum of the shares.
 
+## Parameters
+The following parameters must be set according to you needs:
+* country name (as used in SCOAP3 metadata)
+* starting year
+* ending year
+* searchurl (using the query syntax of the repository)
+* mapping_file (name of the file containing the mapping from affiliation variants to unique acronyms)
+* names of foldes and files
+* switches to launch only selected operations
+
 ## Process
-The publications metadata is imported in specific "imports" folder using the [SCOAP3 repository API](https://github.com/SCOAP3/scoap3-next/wiki/API-documentation), with the URL: https://repo.scoap3.org/api/records/?q=country:[country]&year=[start year]--[end year] or https://repo.scoap3.org/api/records/?q=country:((NOT+CERN)+AND+[country])&year=[start year]--[end year] if "CERN affiliated" articles are to be discarded.
+The publications metadata is imported in dedicated "imports" folder using the [SCOAP3 repository API](https://github.com/SCOAP3/scoap3-next/wiki/API-documentation), with the URL: https://repo.scoap3.org/api/records/?q=country:[country]&year=[start year]--[end year] or https://repo.scoap3.org/api/records/?q=country:((NOT+CERN)+AND+[country])&year=[start year]--[end year] if "CERN affiliated" articles are to be discarded.
 
 Analysing and processing the metadata result into two files that are saved in the "parsed" folder:
 * Publications -> file "[country]\_[start year]\_[end year]_publications.tsv" with columns publication_id, publication_year, publication_doi, authors_nb, affiliations_nb
@@ -25,7 +35,7 @@ Analysing and processing the metadata result into two files that are saved in th
 The affiliations are then mapped to institutional acronyms using an accompaniyng file named "affiliations_mapping.[xlsx or tsv]" that must be completed with all new variants of affiliations names.
 
 ## Results
-Eventually the notebook exports 3 files in the "results" folder:
-* [country]\_[start year]\_[end year]_affiliations_not_mapped.[xlsx or tsv]: all the affiliations not mapped using the file "affiliations_mapping.[xlsx or tsv]"
-* [country]\_[start year]\_[end year]_publications_by_institution.[xlsx or tsv]: file with the columns acronym, publication_year, publication_doi (one row per publication and institution acronym)
-* [country]\_[start year]\_[end year]_ratios.[xlsx or tsv]: file with the final results, the columns are acronym, ratio, percentage (one row per institution acronym)
+Eventually the notebook exports 3 files in the "results" folder. One file contains the list of affiliation variants that are not listed in the mapping file "affiliations_mapping.[xlsx or tsv]". You may complete that file with these variants. The second file lists the DOI of the publications with year and institution (acronym). The last file contains the result of the calculation of the allocation per institution (sum of ratios and allocation as a percent).
+* [country]\_[start year]\_[end year]_affiliations_not_mapped.[xlsx or tsv]
+* [country]\_[start year]\_[end year]_publications_by_institution.[xlsx or tsv]
+* [country]\_[start year]\_[end year]_ratios.[xlsx or tsv]
