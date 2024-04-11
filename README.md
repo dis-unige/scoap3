@@ -19,13 +19,13 @@ The following method is currently used in Switzerland for the calculation of the
 The publications metadata is imported using the [SCOAP3 repository API](https://github.com/SCOAP3/scoap3-next/wiki/API-documentation), with the URL: https://repo.scoap3.org/api/records/?q=country:[country]&year=[start year]--[end year] or https://repo.scoap3.org/api/records/?q=country:((NOT+CERN)+AND+[country])&year=[start year]--[end year]
 
 Then we export the metadata into 2 files on the "parsed" folder:
-* Publications -> file "[country]_[start year]_[end year]_publications.tsv" with columns publication_id, publication_year, publication_doi, authors_nb, affiliations_nb
-* Affiliations -> file "[country]_[start year]_[end year]_affiliations.tsv" with columns publication_id, author_id, affiliation_id, ratio, affiliation_country, affiliation_value
+* Publications -> file "[country]\_[start year]\_[end year]_publications.tsv" with columns publication_id, publication_year, publication_doi, authors_nb, affiliations_nb
+* Affiliations -> file "[country]\_[start year]\_[end year]_affiliations.tsv" with columns publication_id, author_id, affiliation_id, ratio, affiliation_country, affiliation_value
 
 The affiliations are mapped to institutions acronymes using an extra file named "affiliations_mapping.[xlsx or tsv]"
 
 ## Results
 The notebook exports 3 files on the "results" folder:
-* [country]_[start year]_[end year]_affiliations_not_mapped.[xlsx or tsv]: all the affiliations not mapped using the file "affiliations_mapping.[xlsx or tsv]"
-* [country]_[start year]_[end year]_publications_by_institution.[xlsx or tsv]: file with the columns acronym, publication_year, publication_doi (one row per publication and institution acronym)
-* [country]_[start year]_[end year]_ratios.[xlsx or tsv]: file with the final results, the columns are acronym, ratio, percentage (one row per institution acronym)
+* [country]\_[start year]\_[end year]_affiliations_not_mapped.[xlsx or tsv]: all the affiliations not mapped using the file "affiliations_mapping.[xlsx or tsv]"
+* [country]\_[start year]\_[end year]_publications_by_institution.[xlsx or tsv]: file with the columns acronym, publication_year, publication_doi (one row per publication and institution acronym)
+* [country]\_[start year]\_[end year]_ratios.[xlsx or tsv]: file with the final results, the columns are acronym, ratio, percentage (one row per institution acronym)
