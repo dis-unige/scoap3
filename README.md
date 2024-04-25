@@ -22,7 +22,7 @@ The following parameters must be set according to you needs:
 * ending year
 * searchurl (using the query syntax of the repository)
 * mapping_file (name of the file containing the mapping from affiliation variants to unique acronyms)
-* names of foldes and files
+* names of folders and files
 * switches to launch only selected operations
 
 ## Process
