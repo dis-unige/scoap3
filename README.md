@@ -35,7 +35,7 @@ Analysing and processing the metadata result into two files that are saved in th
 The affiliations are then mapped to institutional acronyms using an accompaniyng file named "affiliations_mapping.[xlsx or tsv]" that must be completed with all new variants of affiliations names.
 
 ## Results
-Eventually the notebook exports 3 files in the "results" folder. One file contains the list of affiliation variants that are not listed in the mapping file "affiliations_mapping.[xlsx or tsv]". You may complete that file with these variants. The second file lists the DOI of the publications with year and institution (acronym). The last file contains the result of the calculation of the allocation per institution (sum of ratios and allocation as a percent).
+Eventually the notebook exports 3 files in the "results" folder. One file contains the list of affiliation variants that are not listed in the mapping file "affiliations_mapping.[xlsx or tsv]". You may complete that file with these variants and relaunch the script without re-importing the records. The second file lists the DOI of the publications with year and institution (acronym). The last file contains the result of the calculation of the allocation per institution (sum of ratios and allocation as a percent).
 * [country]\_[start year]\_[end year]_affiliations_not_mapped.[xlsx or tsv]
 * [country]\_[start year]\_[end year]_publications_by_institution.[xlsx or tsv]
 * [country]\_[start year]\_[end year]_ratios.[xlsx or tsv]
